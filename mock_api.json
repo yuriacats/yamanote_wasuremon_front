@@ -1,0 +1,22 @@
+{
+    "api1": {
+        "status": "sucsess",
+        "message": {
+            "targetStation": "新宿",
+            "arrivalTrains": [
+                {
+                    "arrivelStation": "新宿",
+                    "arrivelTime": "21:04"
+                },
+                {
+                    "arrivelStation": "新宿",
+                    "arrivelTime": "20:59"
+                },
+                {
+                    "arrivelStation": "新宿",
+                    "arrivelTime": "20:55"
+                }
+            ]
+        }
+    }
+}
