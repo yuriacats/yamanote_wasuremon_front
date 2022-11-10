@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import MainContent from './view/content';
+import UsePossibleTimetables from './component/ResultTabel';
 
-function App() {
+const Header = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <header>
+      <h1>Yamanote Wasuremon.oo</h1>
+      <p></p>
+    </header>
+  )
+}
+
+class App extends React.Component {
+  render() {
+    return (
+      <div id='app'>
+        <Header />
+        <MainContent />
+      </div>
+    )
+  }
 }
 
 export default App;
