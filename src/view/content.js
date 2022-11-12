@@ -1,5 +1,5 @@
 import React from 'react';
-import UsePossibleTimetables from '../component/ResultTabel';
+import UsePossibleTimetables from '../component/ResultTable';
 
 export const MainContent = () => {
 

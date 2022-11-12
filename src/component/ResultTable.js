@@ -12,8 +12,8 @@ const ArrivalColumns = (props) => {
     // 終着駅が違うので、その点を考慮する
     return (
         <tr>
-            <td >{props.stationName}</td>
-            <td>{props.arrivelTime}</td>
+            <td className="stationName">{props.stationName}</td>
+            <td className="arricalTime">{props.arrivelTime}</td>
         </tr>
     )
 }

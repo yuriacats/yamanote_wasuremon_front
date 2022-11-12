@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import MainContent from './view/content';
-import UsePossibleTimetables from './component/ResultTabel';
 
 const Header = () => {
   return (
