@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 
-const NomalColumns = (props) => {
+export const NomalColumns = (props) => {
+    console.log(props)
     return (
         <tr>
-            <td>{props.stationName}</td>
-            <td>{props.arrivelTime}</td>
+            <td className="stationName">{props.stationName}</td>
+            <td className="arrivalTime">{props.arrivelTime}</td>
         </tr>
     )
 }
-const ArrivalColumns = (props) => {
+export const ArrivalColumns = (props) => {
     // 終着駅が違うので、その点を考慮する
     return (
         <tr>
             <td className="stationName">{props.stationName}</td>
-            <td className="arricalTime">{props.arrivelTime}</td>
+            <td className="arrivalTime">{props.arrivelTime}</td>
         </tr>
     )
 }

@@ -1,26 +1,17 @@
-import { act } from 'react-dom/test-utils'; // ES6
 import React from 'react';
-import rewire from 'rewire'
-import ReactDOM from 'react-dom/client';
-const NomalColumns = rewire('../component/ResultTable')
+import { NomalColumns } from '../component/ResultTable';
 
-let container
+const forColumsJson = {
+    stationName: "hoge",
+    arrivelTime: "03:00"
+}
 
-beforeEach(() => {
-    container = document.createElement('div');
-    document.body.appendChild(container);
-});
-
-afterEach(() => {
-    document.body.removeChild(container);
-    container = null;
-});
-
-it('Can create Dom', () => {
-    act(() => {
-        const stationNameMock = "テスト"
-        const arrivalTimeMock = "03:35"
-        ReactDOM.createRoot(container).render(<NomalColumns stationName={stationNameMock} arrivelTime={arrivalTimeMock} />)
-    });
-    isElement(container)
-});
+describe('NomalColums', () => {
+    it.todo('JsonでパースしてきたObjectをtdに変換する');
+    expect(NomalColumns(forColumsJson)).toEqual((
+        <tr>
+            <td className="station-name">hoge</td>
+            <td className="arrival-time">03:00</td>
+        </tr>
+    ))
+})
