@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "htpps://https://yuriacats.github.io/yamanote_wasuremon_front/",
   "dependencies": {
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
@@ -13,6 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "json": "yarn run json-server -w mock_api.json",
     "test": "jest",
     "eject": "react-scripts eject"
