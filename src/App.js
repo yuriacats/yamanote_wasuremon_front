@@ -1,11 +1,18 @@
-import './App.css';
 import React from 'react';
 import MainContent from './view/content';
 
 const Header = () => {
   return (
-    <header>
-      <h1>Yamanote Wasuremon.oo</h1>
+    <header className='
+    bg-teal-100
+    '>
+      <h1 className=" 
+      text-3xl
+      font-bold 
+      underline 
+      text-center
+      ">
+        Yamanote Wasuremon.oo</h1>
       <p></p>
     </header>
   )

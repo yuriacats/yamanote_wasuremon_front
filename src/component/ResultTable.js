@@ -34,7 +34,7 @@ export const UsePossibleTimetables = () => {
     }, []);
 
     const set_column = (target) => {
-        if (target.arrivelStation == targetStation) {
+        if (target.arrivelStation === targetStation) {
             return <NomalColumns stationName={target.arrivelStation} arrivelTime={target.arrivelTime} />
         } else {
             return <ArrivalColumns stationName={target.arrivelStation} arrivelTime={target.arrivelTime} />
@@ -42,11 +42,13 @@ export const UsePossibleTimetables = () => {
     }
     return (
         <table>
-            <tr>
-                <th>終着駅</th>
-                <th>到着予定時刻</th>
-            </tr>
-            {arrivalTrains.map((train) => set_column(train))}
+            <tbody>
+                <tr>
+                    <th>終着駅</th>
+                    <th>到着予定時刻</th>
+                </tr>
+                {arrivalTrains.map((train) => set_column(train))}
+            </tbody>
         </table>
     )
 }

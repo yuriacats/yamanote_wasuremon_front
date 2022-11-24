@@ -2,11 +2,13 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "htpps://https://yuriacats.github.io/yamanote_wasuremon_front/",
+  "homepage": "https://yamanote-wasuremon-front.vercel.app/",
   "dependencies": {
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
     "@mui/material": "5.10.13",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
@@ -18,7 +20,8 @@
     "deploy": "gh-pages -d build",
     "json": "yarn run json-server -w mock_api.json",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tailwind": "npx tailwindcss -i ./src/index.css -o ./src/output.css --watch"
   },
   "eslintConfig": {
     "extends": [
